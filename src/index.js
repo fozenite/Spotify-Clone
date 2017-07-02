@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App, { AppDescription } from './components/app';
-
-console.log(AppDescription);
+import App from './components/app';
 
 ReactDOM.render(
   <App />,

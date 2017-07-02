@@ -1,15 +1,12 @@
 import React from 'react';
+import Button from './button';
 
-let printsToConsole = () => {
-  console.log('Button Clicked');
-};
 
 const App = () => (
   <div>
-    <button onClick={() => console.log('Button Clicked')}>Click Me!</button>
+    <Button name={'Click'}/>
+    <Button name={'Search'}/>
   </div>
 );
-
-export const AppDescription = 'App says hi';
 
 export default App;
