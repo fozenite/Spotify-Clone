@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Button from './button';
 
+export default class App extends Component {
 
-const App = () => (
-  <div>
-    <Button name={'Click'}/>
-    <Button name={'Search'}/>
-  </div>
-);
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0,
+    };
+  }
 
-export default App;
+  render() {
+    return (
+      <div>
+        {this.state.counter}
+        <Button name={'Add 1'} clicked={() => this.setState({ counter: this.state.counter + 1 })}/>
+      </div>
+    );
+  }
+}
+
+
